@@ -1,2 +1,2 @@
 # Senac-MachineLearn
-Projetos da Aula de Machine Learn
+Projetos da Aula de Machine Learning
