@@ -30,7 +30,7 @@
 
 ## Visualização dos Modelos
 
-![Exercício 1 - Comparação Tamanho vs Quartos]([images/ex1_comparacao.png](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%202/ex1_comparacao.png))
+![Exercício 1 - Comparação Tamanho vs Quartos](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex1_comparacao.png)
 
 ---
 
@@ -90,9 +90,9 @@
 
 ## Visualização dos Modelos
 
-![Exercício 2 - Comparação TV, Radio e Newspaper](images/ex2_comparacao.png)
+![Exercício 2 - Comparação TV, Radio e Newspaper](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex2_comparacao.png)
 
-![Exercício 2 - Gráfico de Barras Comparativo](images/ex2_barras.png)
+![Exercício 2 - Gráfico de Barras Comparativo](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex2_barras.png)
 
 ---
 
@@ -184,9 +184,9 @@
 
 ## Visualização dos Resultados
 
-![Exercício 3 - Comparação R² por Modelo](images/ex3_comparacao_r2.png)
+![Exercício 3 - Comparação R² por Modelo](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex3_comparacao_r2.png)
 
-![Exercício 3 - Treino vs Teste](images/ex3_treino_teste.png)
+![Exercício 3 - Treino vs Teste](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex3_treino_teste.png)
 
 ---
 
