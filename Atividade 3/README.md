@@ -1,5 +1,21 @@
 # Respostas dos Exercícios de Regressão Linear
 
+## 👤 Autor
+
+**Laércio Santos**
+
+Pós-graduação em Inteligência Artificial - Centro Universitário SENAC
+
+
+## 🚀 Executar no Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/Respostas Atividade 3.ipynb)
+
+**Link direto:** [Abrir no Google Colab](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/Respostas Atividade 3.ipynb)
+
+
+
+
 ## Exercício 1
 **Para cada um dos conjuntos de treinamento, utilize a função fit múltiplas vezes considerando apenas um atributo preditor.**
 
@@ -36,7 +52,7 @@
 **Realizar a análise da qualidade dos preditores utilizados no modelo construído.**
 
 ### 1. Construir o plot de resíduos. Será que os resíduos estão aleatoriamente distribuídos ao redor de 0?
-![Plot de Resíduos](plot_residuos.png)
+![Plot de Resíduos]((https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%203/plot_residuos.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/plot_residuos.png)
 *(Nota: Certifique-se de que a imagem gerada pelo código esteja na mesma pasta)*
 
 **R:** Os resíduos estão distribuídos em torno de 0, o que é bom, mas **não são perfeitamente aleatórios**. No dataset *Advertising*, é comum observar uma forma leve de "U" (curvatura) no gráfico de resíduos x preditos. Isso indica que, embora o modelo linear seja bom, ainda existe alguma não-linearidade nos dados (interação entre TV e Rádio) que o modelo linear simples não capturou perfeitamente.
