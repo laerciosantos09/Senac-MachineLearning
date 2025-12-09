@@ -33,7 +33,8 @@
 ![Exercício 1 - Comparação Tamanho vs Quartos](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex1_comparacao.png)
 
 
-[![Minha Imagem](./imagens/ex1_comparacao.png)](./imagens/ex1_comparacao.png)
+[![Comparação](Atividade%202/ex1_comparacao.png)](Atividade%202/ex1_comparacao.png)
+
 
 
 ---
