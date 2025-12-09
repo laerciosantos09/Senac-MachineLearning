@@ -73,11 +73,11 @@ Foi criado um classificador de Regressão Logística utilizando **todas as 15 va
 
 #### Variáveis Mais Importantes (por coeficiente):
 
-[![Coeficientes da Regressão Logística](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/coeficientes_regressao_logistica.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/coeficientes_regressao_logistica.png)
+[![Coeficientes da Regressão Logística](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/CoeficienteRegressaoLogistica.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/CoeficienteRegressaoLogistica.png)
 
 #### Correlação das Variáveis com TenYearCHD:
 
-[![Correlação das Variáveis](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/correlacao_variaveis.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/correlacao_variaveis.png)
+[![Correlação das Variáveis](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/correlacao_variaveisTenYearCHD.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/correlacao_variaveisTenYearCHD.png)
 
 ---
 
@@ -112,7 +112,7 @@ As curvas ROC foram construídas para comparar visualmente o desempenho dos dife
 
 #### Comparação de AUC por Conjunto:
 
-[![Comparação AUC](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/comparacao_auc_conjuntos.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/comparacao_auc_conjuntos.png)
+[![Comparação AUC](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/ComparacaoMetricas.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/ComparacaoMetricas.png)
 
 ---
 
@@ -143,19 +143,19 @@ Foram testados diferentes valores de K:
 
 #### Curvas ROC - Comparação entre Classificadores:
 
-[![Curvas ROC - Classificadores](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/curvas_roc_classificadores.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/curvas_roc_classificadores.png)
+[![Curvas ROC - Classificadores](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/CurvaROCClassificadores.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/CurvaROCClassificadores.png)
 
 #### Matrizes de Confusão:
 
-[![Matrizes de Confusão](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/matrizes_confusao.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/matrizes_confusao.png)
+[![Matrizes de Confusão](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/MatrizesConfusao.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/MatrizesConfusao.png)
 
 #### Comparação de Métricas:
 
-[![Comparação de Métricas](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/comparacao_metricas.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/comparacao_metricas.png)
+[![Comparação de Métricas](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/CurvaROCComparacao.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/CurvaROCComparacao.png)
 
 #### Ranking Final:
 
-[![Ranking Final](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/ranking_final.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/ranking_final.png)
+[![Ranking Final](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/RankingFinal.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/RankingFinal.png)
 ---
 
 ## 📈 Conclusões
