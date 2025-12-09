@@ -108,11 +108,11 @@ As curvas ROC foram construídas para comparar visualmente o desempenho dos dife
 
 #### Curvas ROC - Comparação de Conjuntos de Variáveis:
 
-[![Curvas ROC - Conjuntos de Variáveis](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/curvas_roc_conjuntos.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/curvas_roc_conjuntos.png)
+[![Curvas ROC - Conjuntos de Variáveis](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/ComparacaoMetricas.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/ComparacaoMetricas.png)
 
 #### Comparação de AUC por Conjunto:
 
-[![Comparação AUC](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/ComparacaoMetricas.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/ComparacaoMetricas.png)
+[![Comparação AUC](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%20%204/ComparacaoAUC-ROC.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%20%204/ComparacaoAUC-ROC.png)
 
 ---
 
