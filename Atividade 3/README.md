@@ -14,60 +14,59 @@ Pós-graduação em Inteligência Artificial - Centro Universitário SENAC
 **Link direto:** [Abrir no Google Colab](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/RespostasAtividade3.ipynb)
 
 
+## Exercício 1: Testando os "Motores" de Aprendizado
+**Testamos duas formas diferentes (algoritmos) de ensinar o computador a prever vendas.**
 
+### 1. O resultado muda se eu rodar o treino várias vezes?
+* **Método Clássico (LinearRegression):** **Não.** É como uma calculadora: se você somar 2 + 2, sempre dará 4. Ele usa uma fórmula matemática exata, então o resultado é sempre idêntico.
+* **Método de Tentativa e Erro (SGDRegressor):** **Sim.** Esse método aprende por "tentativa e erro". Ele começa chutando valores aleatórios e vai ajustando. Por isso, cada vez que você roda, o resultado final pode ser um pouquinho diferente, dependendo de onde ele começou os chutes.
 
-## Exercício 1
-**Para cada um dos conjuntos de treinamento, utilize a função fit múltiplas vezes considerando apenas um atributo preditor.**
-
-### 1. O modelo aprendido muda a cada vez que a função fit é utilizada?
-* **LinearRegression (OLS):** **Não.** O método dos Mínimos Quadrados Ordinários é uma solução analítica fechada (determinística). Dado o mesmo conjunto de dados, ele sempre calculará exatamente os mesmos coeficientes e intercepto.
-* **SGDRegressor:** **Sim.** Como este algoritmo utiliza Descida de Gradiente Estocástica, ele inicia com pesos aleatórios e atualiza os pesos iterativamente. Se o parâmetro `random_state` não for fixado, o caminho de otimização varia ligeiramente a cada execução, resultando em modelos finais levemente diferentes.
-
-### 2. Os modelos finais aprendidos são os mesmos da outra implementação de regressão linear?
-**R:** Eles são **muito próximos**, mas não idênticos.
-* A `LinearRegression` encontra o valor ótimo exato global.
-* O `SGDRegressor` encontra uma aproximação desse valor. Com número suficiente de iterações e dados normalizados, o SGD converge para valores extremamente próximos aos da regressão linear clássica.
+### 2. Os dois métodos chegaram na mesma conclusão?
+**R:** Eles chegaram em resultados **quase idênticos**.
+* O método clássico encontra a resposta matematicamente perfeita.
+* O método de tentativa e erro chega muito, muito perto dessa resposta perfeita (se dermos tempo suficiente para ele aprender).
 
 ---
 
-## Exercício 2
-**Aprenda modelos utilizando todos os atributos de entrada.**
+## Exercício 2: Usando todas as informações (TV, Rádio e Jornal)
+**Agora, tentamos prever as vendas usando todos os canais de publicidade ao mesmo tempo.**
 
-### 1. Baseado no RSS e no R^2, é possível obter um modelo melhor utilizando todos os dados?
-**R: Sim.**
-* Ao utilizar as três variáveis (TV, Radio, Newspaper), o $R^2$ sobe para aproximadamente **0.897** (explicando quase 90% da variância das vendas).
-* Comparativamente, modelos com apenas uma variável (ex: apenas TV) costumam ter um $R^2$ bem menor (em torno de 0.61). Adicionar informações relevantes diminui o RSS (erro residual) e melhora o ajuste.
+### 1. O modelo fica melhor se usarmos todos os dados?
+**R: Sim, melhora muito.**
+* Quando olhamos para TV, Rádio e Jornal juntos, conseguimos explicar quase **90%** do comportamento das vendas.
+* Se olhássemos apenas para a TV, explicaríamos apenas 60%. Ou seja: quanto mais informação relevante, melhor a previsão.
 
-### 2. Existem atributos que poderiam ser desconsiderados sem que fosse afetada a precisão?
-**R: Sim, o atributo "Newspaper".**
-* Ao analisar os coeficientes ou remover a variável, observa-se que o $R^2$ praticamente não se altera (cai de ~0.8972 para ~0.8971). Isso sugere que o investimento em jornal não traz poder preditivo adicional significativo quando já sabemos o investimento em TV e Rádio.
+### 2. Tem alguma informação inútil que poderíamos jogar fora?
+**R: Sim, o "Jornal" (Newspaper).**
+* Descobrimos que investir em Jornal não ajuda a prever as vendas se já soubermos quanto foi gasto em TV e Rádio. Se removermos a coluna "Jornal" da análise, a precisão do modelo continua praticamente a mesma (90%).
 
-### 3. Qual implementação treina mais rápido? A com método dos mínimos quadrados ou a com descida de gradiente?
-**R:** Para bases de dados pequenas como esta (*Advertising* tem 200 linhas), o **Método dos Mínimos Quadrados (`LinearRegression`)** é mais rápido.
-* A descida de gradiente (`SGDRegressor`) é vantajosa computacionalmente apenas quando o número de dados é massivo (milhões de exemplos), onde a inversão de matrizes do método clássico se torna inviável.
+### 3. Qual método foi mais rápido para treinar?
+**R:** Para essa planilha pequena (200 linhas), o **Método Clássico** foi mais rápido.
+* O método de "tentativa e erro" (SGD) só vale a pena quando temos uma quantidade gigantesca de dados (milhões de linhas), onde a matemática do método clássico travaria o computador.
 
 ---
 
-## Exercício 3
-**Realizar a análise da qualidade dos preditores utilizados no modelo construído.**
+## Exercício 3: Verificando a qualidade da previsão
+**Fizemos uma "auditoria" para ver onde o modelo está errando e quais variáveis são confiáveis.**
 
-### 1. Construir o plot de resíduos. Será que os resíduos estão aleatoriamente distribuídos ao redor de 0?
+### 1. Onde o modelo erra? Existe um padrão nos erros?
+**R:** O modelo é bom, mas **não é perfeito**.
+* Ao analisar os erros (a diferença entre o que o modelo previu e o que realmente vendeu), notamos que existe um leve padrão (uma curva). Isso significa que a relação entre propaganda e vendas não é uma linha reta perfeita; existe alguma complexidade extra que nosso modelo simples não captou 100%, mas chegou perto.
+* 
 [![Plot de Resíduos](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%203/plot_residuos.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/plot_residuos.png)
 
-**R:** Os resíduos estão distribuídos em torno de 0, o que é bom, mas **não são perfeitamente aleatórios**. No dataset *Advertising*, é comum observar uma forma leve de "U" (curvatura) no gráfico de resíduos x preditos. Isso indica que, embora o modelo linear seja bom, ainda existe alguma não-linearidade nos dados (interação entre TV e Rádio) que o modelo linear simples não capturou perfeitamente.
-
-### 2. Calcular os valores p para os preditores. Comparar desempenho removendo variáveis.
+### 2. Estatisticamente, quem são os "culpados" pelas vendas?
 **R:**
-* **TV e Radio:** Possuem valores-p extremamente baixos (p < 0.000), indicando alta significância estatística.
-* **Newspaper:** Possui um valor-p alto (geralmente acima de 0.05 ou até 0.8), indicando que não é estatisticamente significativo para o modelo na presença das outras variáveis.
-* **Comparação:** O modelo treinado apenas com **TV e Radio** (excluindo Newspaper) mantém praticamente o mesmo desempenho ($R^2 \approx 0.897$), confirmando que *Newspaper* é redundante e pode ser removido para simplificar o modelo.
+* **TV e Rádio:** A estatística confirma com certeza absoluta que eles aumentam as vendas.
+* **Jornal:** A estatística mostra que ele **não tem relevância**. É como se fosse "ruído" na comunicação.
+* **Conclusão:** Podemos criar um modelo mais simples e eficiente usando apenas TV e Rádio, ignorando o Jornal.
 
 ---
 
-## Exercício 4 (Extra)
-**Realizar o teste para descobrir multicolinearidade entre variáveis preditivas (VIF).**
+## Exercício 4: As variáveis se copiam? (Multicolinearidade)
+**Checamos se as variáveis são independentes ou se uma está "imitando" a outra.**
 
-### 1. Existe alguma evidência de multicolinearidade entre as variáveis preditivas?
-**R:** **Não há evidência de multicolinearidade severa.**
-* Os valores de VIF (Variance Inflation Factor) para TV, Radio e Newspaper costumam ficar baixos (geralmente entre **1.0 e 1.5**).
-* Como regra prática, preocupamo-nos com multicolinearidade quando o VIF excede 5 ou 10. Valores próximos de 1 indicam que as variáveis são independentes entre si, o que é ideal para a regressão linear.
+### 1. Existe redundância entre os canais de publicidade?
+**R:** **Não, cada canal é independente.**
+* Fizemos um teste chamado VIF e os resultados foram baixos (próximos de 1).
+* Isso é ótimo! Significa que o gasto em TV não está "amarrado" ao gasto em Rádio. Eles são decisões separadas, o que torna mais fácil para o computador entender qual é a contribuição real de cada um para as vendas.
