@@ -1,5 +1,13 @@
 # Exercícios - Regressão Linear Univariada
 
+
+## 👤 Autor
+
+**Laércio Santos**
+
+Pós-graduação em Inteligência Artificial - Centro Universitário SENAC
+
+
 ## 🚀 Executar no Google Colab
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%202/Solucao_Exercicios_Regressao_Linear.ipynb)
@@ -327,9 +335,3 @@
 - Scikit-learn (LinearRegression, KNeighborsRegressor, train_test_split)
 
 ---
-
-## 👤 Autor
-
-**Laércio Santos**
-
-Pós-graduação em Inteligência Artificial - Centro Universitário SENAC
