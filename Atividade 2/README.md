@@ -187,9 +187,11 @@
 
 ## Visualização dos Resultados
 
-![Exercício 3 - Comparação R² por Modelo](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex3_comparacao_r2.png)
 
-![Exercício 3 - Treino vs Teste](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex3_treino_teste.png)
+[![Exercício 3 - Comparação R² por Modelo](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/ex3_comparacao_r2.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%202/ex3_comparacao_r2.png)
+
+[![Exercício 3 - Treino vs Teste](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/ex3_treino_teste.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%202/ex3_treino_teste.png)
+
 
 ---
 
