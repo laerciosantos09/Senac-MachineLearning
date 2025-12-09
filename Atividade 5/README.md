@@ -1,7 +1,7 @@
 
-# Atividade 5 - Classificação de Notas de Banco
+# Atividade 5 - Identificando Notas Falsas com Inteligência Artificial
 
-Este documento apresenta a resolução da Atividade 5, utilizando Python e a biblioteca Scikit-Learn para treinar e avaliar modelos de Machine Learning na tarefa de classificação de autenticidade de notas de banco.
+Este documento resume a Atividade 5. O objetivo aqui foi ensinar o computador a olhar para características de uma nota de dinheiro e dizer automaticamente se ela é **verdadeira** ou **falsa**.
 
 ## 👨‍💻 Autor
 
@@ -13,41 +13,38 @@ Pós-graduação em Inteligência Artificial - Centro Universitário SENAC
 
 **Link direto:** [Abrir no Google Colab](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%205/Respostas%20Atividade%205.ipynb)
 
-## 1. Criação dos Classificadores
 
-Foram criados dois tipos de classificadores para este problema:
+## 1. Criando os "Robôs" (Classificadores)
 
-* **Naive Bayes:** Utilizou-se o algoritmo `GaussianNB`, adequado para dados com distribuição normal.
-* **Regressão Logística:** Utilizou-se o algoritmo `LogisticRegression`, integrado em um pipeline com `StandardScaler` para padronização dos dados, o que favorece o desempenho deste modelo.
+* **Naive Bayes:** Um modelo baseado em probabilidades estatísticas simples.
+* **Regressão Logística:** Um modelo matemático muito usado para separar coisas em duas categorias (neste caso: nota falsa vs. nota verdadeira).
 
-## 2. Validação Cruzada e Seleção de Modelos
+## 2. A Bateria de Testes (Validação Cruzada)
 
-A validação cruzada foi aplicada para avaliar a robustez dos modelos e selecionar os melhores hiperparâmetros.
+Não basta treinar o modelo uma vez e confiar. Para ter certeza de que o computador aprendeu mesmo (e não apenas decorou as respostas), usamos uma técnica chamada **Validação Cruzada**.
 
-* **Estratégia:** Foi utilizado o `StratifiedKFold` com 10 dobras (folds), garantindo que a proporção de classes fosse mantida em cada divisão de treino e teste.
-* **Naive Bayes:** Obteve uma **acurácia média de 83.54%** (+/- 4.19%) na validação cruzada.
-* **Regressão Logística:** Foi submetida ao `GridSearchCV` para otimização dos hiperparâmetros `C` (força da regularização) e `solver`.
-    * **Melhores Parâmetros:** `{'logisticregression__C': 100, 'logisticregression__solver': 'liblinear'}`.
-    * **Melhor Acurácia Média:** **98.96%**.
+* **Como funciona:** Dividimos os dados em 10 partes. Treinamos com 9 partes e testamos na parte que sobrou. Repetimos isso 10 vezes mudando as partes. É como fazer 10 provas diferentes para garantir que o aluno é bom mesmo.
 
-**Conclusão da Seleção:** A Regressão Logística apresentou desempenho superior na validação cruzada e foi escolhida como o modelo final.
+  
+* **O Resultado:** O modelo de **Regressão Logística** foi o campeão. Ele teve uma nota média de quase **99%**, superando o outro modelo. Nós também fizemos alguns ajustes finos (chamados de *hiperparâmetros*) para garantir que ele funcionasse na sua potência máxima.
 
-## 3. Matriz de Confusão
 
-A matriz de confusão foi gerada utilizando o modelo vencedor (Regressão Logística) nos dados de teste reservados (30% do dataset original).
+## 3. O "Boletim" Final (Matriz de Confusão)
+
+Depois de escolher o melhor modelo, fizemos um teste final com dados que ele nunca tinha visto antes. O resultado é mostrado na imagem abaixo, chamada de Matriz de Confusão. Ela mostra quantos acertos e erros o modelo teve.
 
 [![Matriz de Confusão](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%205/MatrizConfusao.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%205/MatrizConfusao.png)
 
-**Análise dos Resultados no Teste:**
-* O modelo atingiu uma **acurácia de 99%** no conjunto de teste.
-* Observa-se um excelente desempenho em ambas as classes (0 e 1), com precisão e recall próximos de 1.00.
+**O que isso significa?**
+* O modelo teve uma **taxa de acerto (acurácia) de 99%**.
+* Ele praticamente não confundiu notas falsas com verdadeiras. O desempenho foi excelente.
 
-## 4. Salvamento do Modelo
+## 4. Guardando o Cérebro do Modelo (Pickle)
 
-O melhor modelo treinado (Regressão Logística) foi serializado e salvo em disco utilizando a biblioteca `pickle`.
+Como o modelo funcionou muito bem, nós o "salvamos" em um arquivo.
 
-* **Nome do Arquivo:** `modelo_banknote_final.pkl`.
-* **Teste de Carregamento:** O modelo foi carregado e testado novamente, confirmando a acurácia de 99.03%.
+* **O que foi feito:** Usamos uma ferramenta chamada `pickle` para salvar todo o aprendizado do computador em um arquivo chamado `modelo_banknote_final.pkl`.
+* **Para que serve:** Isso permite que a gente use essa inteligência artificial no futuro sem precisar treinar tudo do zero novamente. É como salvar o progresso de um jogo.
 
 ---
-*Este relatório foi gerado com base na execução do notebook `Respostas Atividade 5.ipynb`.*
+*Relatório gerado a partir do notebook `Respostas Atividade 5.ipynb`.*
