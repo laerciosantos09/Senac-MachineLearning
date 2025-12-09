@@ -9,9 +9,9 @@ Pós-graduação em Inteligência Artificial - Centro Universitário SENAC
 
 ## 🚀 Executar no Google Colab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/Respostas Atividade 3.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/RespostasAtividade3.ipynb.ipynb)
 
-**Link direto:** [Abrir no Google Colab](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/Respostas Atividade 3.ipynb)
+**Link direto:** [Abrir no Google Colab](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/RespostasAtividade3.ipynb.ipynb)
 
 
 
