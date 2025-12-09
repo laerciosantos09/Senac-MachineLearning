@@ -93,9 +93,9 @@
 
 ## Visualização dos Modelos
 
-![Exercício 2 - Comparação TV, Radio e Newspaper](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex2_comparacao.png)
+[![Exercício 2 - Comparação TV, Radio e Newspaper](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/ex2_comparacao.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%202/ex2_comparacao.png)
 
-![Exercício 2 - Gráfico de Barras Comparativo](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/images/ex2_barras.png)
+[![Exercício 2 - Gráfico de Barras Comparativo](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/ex2_barras.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%202/ex2_barras.png)
 
 ---
 
