@@ -52,9 +52,8 @@ Pós-graduação em Inteligência Artificial - Centro Universitário SENAC
 **Realizar a análise da qualidade dos preditores utilizados no modelo construído.**
 
 ### 1. Construir o plot de resíduos. Será que os resíduos estão aleatoriamente distribuídos ao redor de 0?
-![Plot de Resíduos](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%203/plot_residuos.png)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Atividade%203/plot_residuos.png)
-[![Exercício 1 - Comparação Tamanho vs Quartos]
-(https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%202/ex1_comparacao.png)]
+![Plot de Resíduos](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%203/plot_residuos.png)](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Atividade%203/plot_residuos.png)
+
 
 
 **R:** Os resíduos estão distribuídos em torno de 0, o que é bom, mas **não são perfeitamente aleatórios**. No dataset *Advertising*, é comum observar uma forma leve de "U" (curvatura) no gráfico de resíduos x preditos. Isso indica que, embora o modelo linear seja bom, ainda existe alguma não-linearidade nos dados (interação entre TV e Rádio) que o modelo linear simples não capturou perfeitamente.
