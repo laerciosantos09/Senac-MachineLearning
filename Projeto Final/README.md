@@ -365,41 +365,6 @@ wordcloud>=1.8.1
 
 ---
 
-## 👥 Autores
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/laerciosantos09">
-        <img src="https://github.com/laerciosantos09.png" width="100px;" alt="Laércio Santos"/><br />
-        <sub><b>Laércio Santos</b></sub>
-      </a><br />
-      <sub>Machine Learning Engineer</sub>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://via.placeholder.com/100/1e1b4b/ffffff?text=AS" width="100px;" alt="Anderson Silva"/><br />
-        <sub><b>Anderson Silva</b></sub>
-      </a><br />
-      <sub>Data Scientist</sub>
-    </td>
-  </tr>
-</table>
-
-### 🎓 Instituição
-
-**Centro Universitário SENAC**  
-Curso: Machine Learning Técnicas e Cases  
-Professor Orientador: [Nome do Professor]  
-Semestre: [Semestre/Ano]
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
 
 ## 📚 Referências
 
@@ -423,24 +388,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - 🔄 [Fluxograma Mermaid](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Fluxo/FluxoDeteccaoDepressao.mermaid)
 - 📊 [Dataset (CSV)](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Projeto%20Final/Database/sentiment_tweets3.csv)
 
----
 
-## 📞 Contato e Suporte
-
-Para dúvidas, sugestões ou colaborações:
-
-- 📧 Email: [seu-email@exemplo.com]
-- 💼 LinkedIn: [Seu LinkedIn]
-- 🐦 Twitter: [@seu_twitter]
-- 💬 Issues: [Abrir uma issue](https://github.com/laerciosantos09/Senac-MachineLearning/issues)
-
----
-
-<div align="center">
-
-### ⭐ Se este projeto foi útil para você, considere dar uma estrela!
-
-**Feito com ❤️ e Python**
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=laerciosantos09.senac-ml-depression)
 ![GitHub stars](https://img.shields.io/github/stars/laerciosantos09/Senac-MachineLearning?style=social)
