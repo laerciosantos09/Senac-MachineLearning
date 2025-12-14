@@ -388,10 +388,4 @@ wordcloud>=1.8.1
 - 🔄 [Fluxograma Mermaid](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Fluxo/FluxoDeteccaoDepressao.mermaid)
 - 📊 [Dataset (CSV)](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Projeto%20Final/Database/sentiment_tweets3.csv)
 
-
-
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=laerciosantos09.senac-ml-depression)
-![GitHub stars](https://img.shields.io/github/stars/laerciosantos09/Senac-MachineLearning?style=social)
-![GitHub forks](https://img.shields.io/github/forks/laerciosantos09/Senac-MachineLearning?style=social)
-
 </div>
