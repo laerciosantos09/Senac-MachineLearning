@@ -1,0 +1,61 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#6366F1', 'primaryTextColor': '#fff', 'primaryBorderColor': '#4F46E5', 'lineColor': '#94A3B8', 'secondaryColor': '#10B981', 'tertiaryColor': '#F59E0B', 'background': '#F8FAFC', 'fontSize': '16px'}}}%%
+
+flowchart TB
+    subgraph INPUT[" "]
+        direction TB
+        A[("🗂️ DATASET\n10.314 Tweets\n77% Normal | 23% Depressão")]
+    end
+
+    subgraph PREP["⚙️ PRÉ-PROCESSAMENTO"]
+        direction TB
+        B["🧹 Limpeza\nURLs • Menções • Hashtags"]
+        C["📝 NLP\nTokenização • Stopwords • Lematização"]
+        D["🔢 TF-IDF\n5.000 features"]
+    end
+
+    subgraph MODELS["🤖 MODELOS"]
+        direction LR
+        E["Logistic\nRegression"]
+        F["Naive\nBayes"]
+        G["Random\nForest"]
+        H["Gradient\nBoosting"]
+        I["SVM"]
+    end
+
+    subgraph EVAL["📊 AVALIAÇÃO"]
+        direction TB
+        J["Métricas\nAccuracy • Precision • Recall • F1"]
+        K["Validação\nMatriz Confusão • ROC • PR Curve"]
+    end
+
+    subgraph OUTPUT[" "]
+        direction TB
+        L[("🏆 RESULTADO\nSVM - 99.42% Accuracy\nF1-Score: 98.63%")]
+    end
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E & F & G & H & I
+    E & F & G & H & I --> J
+    J --> K
+    K --> L
+
+    style A fill:#3B82F6,stroke:#1D4ED8,stroke-width:3px,color:#fff
+    style B fill:#8B5CF6,stroke:#6D28D9,stroke-width:2px,color:#fff
+    style C fill:#8B5CF6,stroke:#6D28D9,stroke-width:2px,color:#fff
+    style D fill:#8B5CF6,stroke:#6D28D9,stroke-width:2px,color:#fff
+    style E fill:#F472B6,stroke:#DB2777,stroke-width:2px,color:#fff
+    style F fill:#F472B6,stroke:#DB2777,stroke-width:2px,color:#fff
+    style G fill:#F472B6,stroke:#DB2777,stroke-width:2px,color:#fff
+    style H fill:#F472B6,stroke:#DB2777,stroke-width:2px,color:#fff
+    style I fill:#EC4899,stroke:#BE185D,stroke-width:3px,color:#fff
+    style J fill:#14B8A6,stroke:#0D9488,stroke-width:2px,color:#fff
+    style K fill:#14B8A6,stroke:#0D9488,stroke-width:2px,color:#fff
+    style L fill:#10B981,stroke:#059669,stroke-width:3px,color:#fff
+    
+    style INPUT fill:none,stroke:none
+    style OUTPUT fill:none,stroke:none
+    style PREP fill:#F3E8FF,stroke:#C084FC,stroke-width:2px,color:#581C87
+    style MODELS fill:#FCE7F3,stroke:#F9A8D4,stroke-width:2px,color:#831843
+    style EVAL fill:#CCFBF1,stroke:#5EEAD4,stroke-width:2px,color:#134E4A
