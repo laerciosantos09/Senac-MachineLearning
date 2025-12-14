@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxograma - Detecção de Depressão em Tweets</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #a5b4fc;
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+        
+        .flowchart-container {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+        }
+        
+        .mermaid {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #a5b4fc;
+            margin-top: 30px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 Detecção de Depressão em Tweets</h1>
+        <p class="subtitle">Fluxograma da Solução de Machine Learning</p>
+        
+        <div class="flowchart-container">
+            <div class="mermaid">
+flowchart TB
+    A[("🗂️ <b>DATASET</b><br/>10.314 Tweets<br/>77% Normal | 23% Depressão")]
+    
+    subgraph PREP["⚙️ PRÉ-PROCESSAMENTO"]
+        B["🧹 <b>Limpeza</b><br/>URLs • Menções • Hashtags"]
+        C["📝 <b>NLP</b><br/>Tokenização • Stopwords • Lematização"]
+        D["🔢 <b>TF-IDF</b><br/>5.000 features • Bigramas"]
+    end
+    
+    subgraph MODELS["🤖 TREINAMENTO DE MODELOS"]
+        E["📊 <b>Logistic Regression</b><br/>Accuracy: 99.12%"]
+        F["📊 <b>Naive Bayes</b><br/>Accuracy: 96.20%"]
+        G["📊 <b>Random Forest</b><br/>Accuracy: 99.27%"]
+        H["📊 <b>Gradient Boosting</b><br/>Accuracy: 99.22%"]
+        I["⭐ <b>SVM</b><br/>Accuracy: 99.42%"]
+    end
+    
+    subgraph EVAL["📈 AVALIAÇÃO"]
+        J["✅ <b>Métricas</b><br/>Accuracy • Precision • Recall • F1"]
+        K["📉 <b>Validação</b><br/>Matriz Confusão • ROC • PR Curve"]
+    end
+    
+    L[("🏆 <b>RESULTADO</b><br/>SVM Vencedor<br/>99.42% Accuracy | F1: 98.63%")]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E & F & G & H & I
+    E & F & G & H & I --> J
+    J --> K
+    K --> L
+
+    style A fill:#3B82F6,stroke:#1E40AF,stroke-width:3px,color:#fff
+    style B fill:#8B5CF6,stroke:#5B21B6,stroke-width:2px,color:#fff
+    style C fill:#8B5CF6,stroke:#5B21B6,stroke-width:2px,color:#fff
+    style D fill:#8B5CF6,stroke:#5B21B6,stroke-width:2px,color:#fff
+    style E fill:#EC4899,stroke:#9D174D,stroke-width:2px,color:#fff
+    style F fill:#EC4899,stroke:#9D174D,stroke-width:2px,color:#fff
+    style G fill:#EC4899,stroke:#9D174D,stroke-width:2px,color:#fff
+    style H fill:#EC4899,stroke:#9D174D,stroke-width:2px,color:#fff
+    style I fill:#F59E0B,stroke:#B45309,stroke-width:3px,color:#fff
+    style J fill:#10B981,stroke:#047857,stroke-width:2px,color:#fff
+    style K fill:#10B981,stroke:#047857,stroke-width:2px,color:#fff
+    style L fill:#22C55E,stroke:#15803D,stroke-width:3px,color:#fff
+    style PREP fill:#EDE9FE,stroke:#A78BFA,stroke-width:2px
+    style MODELS fill:#FCE7F3,stroke:#F9A8D4,stroke-width:2px
+    style EVAL fill:#D1FAE5,stroke:#6EE7B7,stroke-width:2px
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #3B82F6;"></div>
+                <span>Entrada</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #8B5CF6;"></div>
+                <span>Pré-processamento</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #EC4899;"></div>
+                <span>Modelos</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #F59E0B;"></div>
+                <span>Melhor Modelo</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #10B981;"></div>
+                <span>Avaliação</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #22C55E;"></div>
+                <span>Resultado</span>
+            </div>
+        </div>
+        
+        <p class="footer">Centro Universitário SENAC • Especialização em Inteligência Artificial • Laércio</p>
+    </div>
+    
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            },
+            themeVariables: {
+                fontFamily: 'Segoe UI, sans-serif',
+                fontSize: '14px'
+            }
+        });
+    </script>
+</body>
+</html>
