@@ -348,6 +348,9 @@ wordcloud>=1.8.1
 - 🔄 [Fluxograma Mermaid](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Fluxo/FluxoDeteccaoDepressao.mermaid)
 - 📊 [Dataset (CSV)](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Projeto%20Final/Database/sentiment_tweets3.csv)
 
+</div>
+
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -370,5 +373,3 @@ wordcloud>=1.8.1
 ### Ambiente de Desenvolvimento
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
-
-</div>
