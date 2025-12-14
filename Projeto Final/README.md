@@ -27,9 +27,6 @@ Autores:
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como Usar](#-como-usar)
 - [Limitações e Considerações Éticas](#-limitações-e-considerações-éticas)
-- [Trabalhos Futuros](#-trabalhos-futuros)
-- [Autores](#-autores)
-- [Licença](#-licença)
 
 ---
 
