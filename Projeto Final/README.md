@@ -262,6 +262,7 @@ pip install -r requirements.txt
 # Abra o Jupyter Notebook
 jupyter notebook "Detecção de Depressão nos Tweets.ipynb"
 
+```
 
 ### Dependências Principais
 
