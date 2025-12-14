@@ -3,14 +3,15 @@
 <div align="center">
 
 ![Header](https://img.shields.io/badge/Machine%20Learning-Depression%20Detection-blue?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?style=for-the-badge&logo=scikit-learn)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
-**Centro Universitário SENAC | Machine Learning Técnicas Projeto Final **
+**Centro Universitário SENAC | Machine Learning Técnicas - Projeto Final**
 
-#
-Autores: 
-## *Laércio Santos e Anderson Silva*
+**Autores:** *Laércio Santos e Anderson Silva*
 
-[📊 Notebook Interativo](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Detec%C3%A7%C3%A3o%20de%20Depress%C3%A3o%20nos%20Tweets.ipynb) | [📄 Artigo Completo](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.docx) | [📈 Apresentação](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Deteccao-de-Depressao-em-Redes-Sociais%20vfinal.pdf)
+[📊 Notebook Interativo](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Detec%C3%A7%C3%A3o%20de%20Depress%C3%A3o%20nos%20Tweets.ipynb) | [📄 Artigo Completo](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.docx) | [📈 Apresentação](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Deteccao-de-Depressao-em-Redes-Sociais_vfinal.pdf)
 
 </div>
 
@@ -20,7 +21,7 @@ Autores:
 
 Este projeto desenvolve um **modelo de Machine Learning capaz de identificar indicativos de depressão em textos publicados no Twitter**, utilizando técnicas de Processamento de Linguagem Natural (NLP) e algoritmos de classificação supervisionada.
 
-### 🔑 Destaques
+### 🔑 Destaques dos Resultados
 
 - ✅ **99.42% de acurácia** com Support Vector Machine (SVM)
 - ✅ **99.78% de precisão** na identificação de casos positivos
@@ -34,6 +35,8 @@ Este projeto desenvolve um **modelo de Machine Learning capaz de identificar ind
 
 > **A OMS estima que mais de 300 milhões de pessoas sofrem de depressão globalmente. A detecção precoce pode salvar vidas.**
 
+### Contexto e Oportunidades
+
 A depressão é uma das principais causas de incapacidade em todo o mundo. Com o crescimento das redes sociais, pessoas frequentemente expressam seus sentimentos e estados emocionais online, criando uma oportunidade única para:
 
 - 🔍 **Detecção precoce** de sinais de alerta
@@ -41,7 +44,7 @@ A depressão é uma das principais causas de incapacidade em todo o mundo. Com o
 - 🤝 **Suporte proativo** através de intervenção assistida por IA
 - 📈 **Pesquisa epidemiológica** em tempo real
 
-### ⚠️ Importante
+### ⚠️ Aviso Importante
 
 Este modelo é uma **ferramenta auxiliar de triagem**, não substitui diagnóstico clínico profissional. Qualquer indicativo detectado deve ser avaliado por profissional qualificado de saúde mental.
 
@@ -51,13 +54,19 @@ Este modelo é uma **ferramenta auxiliar de triagem**, não substitui diagnósti
 
 ### 1️⃣ Dataset
 
+#### Características do Dataset
+
 **10.314 tweets rotulados** em inglês:
 - 📊 8.000 tweets normais (77.6%)
 - 📊 2.314 tweets com indicativos de depressão (22.4%)
 
 🔗 **[Acessar Dataset Completo](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Projeto%20Final/Database/sentiment_tweets3.csv)**
 
+---
+
 ### 2️⃣ Pré-Processamento
+
+#### Pipeline de Processamento de Dados
 
 ```python
 # Pipeline de Processamento
@@ -76,7 +85,11 @@ Este modelo é uma **ferramenta auxiliar de triagem**, não substitui diagnósti
    └─ Max_df=0.95 (frequência máxima)
 ```
 
+---
+
 ### 3️⃣ Modelos Treinados
+
+#### Algoritmos Comparados
 
 | Algoritmo | Tipo | Características |
 |-----------|------|-----------------|
@@ -86,7 +99,11 @@ Este modelo é uma **ferramenta auxiliar de triagem**, não substitui diagnósti
 | **Gradient Boosting** | Aprendizado Sequencial | 100 estimadores, boosting |
 | **Naive Bayes** | Probabilístico | Baseado em Teorema de Bayes |
 
-### 4️⃣ Validação
+---
+
+### 4️⃣ Validação e Avaliação
+
+#### Estratégia de Validação
 
 - ✔️ Divisão estratificada 80/20 (treino/teste)
 - ✔️ Cross-validation 5-fold
@@ -171,6 +188,8 @@ flowchart TB
 
 ### Comparação de Desempenho dos Modelos
 
+#### Tabela Comparativa
+
 | Modelo | Acurácia | Precisão | Recall | F1-Score | ROC-AUC |
 |--------|----------|----------|--------|----------|---------|
 | **SVM** 🏆 | **99.42%** | **99.78%** | **97.62%** | **98.69%** | **99.85%** |
@@ -179,10 +198,15 @@ flowchart TB
 | Gradient Boosting | 99.22% | 98.57% | 98.51% | 98.54% | 99.76% |
 | Naive Bayes | 96.20% | 89.74% | 93.72% | 91.68% | 98.42% |
 
-### 🎯 Performance do SVM (Modelo Vencedor)
+---
+
+### 🎯 Performance Detalhada do SVM (Modelo Vencedor)
+
+#### Métricas de Validação
 
 ```
 📈 Validação Cruzada (5-fold): 98.2% (±0.4%)
+
 📊 Matriz de Confusão (2.053 predições):
    ├─ Verdadeiros Positivos: 411
    ├─ Verdadeiros Negativos: 1.630
@@ -193,7 +217,9 @@ flowchart TB
 ❌ Taxa de Erro: 0.58% (12 erros em 2.053 predições)
 ```
 
-### 📈 Gráfico de Performance
+---
+
+### 📈 Visualização de Performance
 
 <div align="center">
 
@@ -205,7 +231,9 @@ flowchart TB
 
 ## 🗂️ Dataset
 
-### Características
+### Características do Dataset
+
+#### Informações Gerais
 
 - **Total**: 10.314 tweets rotulados
 - **Idioma**: Inglês
@@ -213,25 +241,33 @@ flowchart TB
 - **Distribuição**: Desbalanceada (77.6% / 22.4%)
 - **Formato**: CSV
 
+---
+
 ### Acesso aos Dados
 
 🔗 **[Download Dataset (CSV)](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Projeto%20Final/Database/sentiment_tweets3.csv)**
 
+---
+
 ### Padrões Linguísticos Identificados
 
 #### 🔴 Tweets COM Depressão
-Palavras predominantes: `depression`, `feel`, `life`, `help`, `anxiety`, `stress`, `people`, `way`, `dont`, `know`
 
-**Características**:
+**Palavras predominantes:** `depression`, `feel`, `life`, `help`, `anxiety`, `stress`, `people`, `way`, `dont`, `know`
+
+**Características linguísticas:**
 - Palavras de emoções negativas
 - Pronomes em primeira pessoa singular (`I`, `me`, `my`)
 - Referências a solidão e isolamento
 - Busca por ajuda e suporte
 
-#### 🟢 Tweets SEM Depressão
-Palavras predominantes: `love`, `good`, `day`, `thank`, `haha`, `time`, `great`, `nice`, `friend`, `happy`
+---
 
-**Características**:
+#### 🟢 Tweets SEM Depressão
+
+**Palavras predominantes:** `love`, `good`, `day`, `thank`, `haha`, `time`, `great`, `nice`, `friend`, `happy`
+
+**Características linguísticas:**
 - Vocabulário positivo e otimista
 - Expressões de gratidão
 - Menções a atividades sociais
@@ -247,7 +283,11 @@ Palavras predominantes: `love`, `good`, `day`, `thank`, `haha`, `time`, `great`,
 
 **Clique no badge acima para abrir o notebook diretamente no Google Colab!**
 
+---
+
 ### Opção 2: Instalação Local
+
+#### Passo a Passo
 
 ```bash
 # Clone o repositório
@@ -261,8 +301,9 @@ pip install -r requirements.txt
 
 # Abra o Jupyter Notebook
 jupyter notebook "Detecção de Depressão nos Tweets.ipynb"
-
 ```
+
+---
 
 ### Dependências Principais
 
@@ -274,17 +315,23 @@ nltk>=3.6.2
 matplotlib>=3.4.2
 seaborn>=0.11.1
 wordcloud>=1.8.1
+```
 
 ---
 
 ## ⚠️ Limitações e Considerações Éticas
+
 ### 🔧 Limitações Técnicas
+
 #### Dataset e Balanceamento
+
 | Limitação | Descrição | Mitigação |
 |-----------|-----------|-----------|
 | **Dataset Desbalanceado** | 77.6% sem depressão vs 22.4% com depressão | `class_weight='balanced'` aplicado em todos os modelos |
 | **Escala do Dataset** | 10.314 tweets é relativamente pequeno | Modelos tradicionais (SVM) performam melhor que deep learning nesta escala |
+
 #### Viés e Generalização
+
 | Limitação | Descrição | Mitigação |
 |-----------|-----------|-----------|
 | **Viés Linguístico** | Dataset em inglês, pode não capturar expressões culturais de outros idiomas | Necessária adaptação para português brasileiro |
@@ -292,381 +339,132 @@ wordcloud>=1.8.1
 
 ---
 
-###
- 🛡️ Considerações Éticas
+### 🛡️ Considerações Éticas
 
-####
- Aspectos Clínicos e de Saúde
+#### Aspectos Clínicos e de Saúde
 
-|
- Aspecto 
-|
- Implicação 
-|
- Recomendação 
-|
+| Aspecto | Implicação | Recomendação |
+|---------|-----------|--------------|
+| **Não é Diagnóstico Clínico** | O modelo detecta padrões linguísticos, não realiza diagnóstico médico | Qualquer indicativo deve ser avaliado por profissional qualificado |
+| **Intervenção Responsável** | Detecção de risco requer protocolo de resposta adequado | Parceria com profissionais de saúde mental |
 
-|
----------
-|
------------
-|
---------------
-|
+#### Privacidade e Direitos
 
-|
- 
-**
-Não é Diagnóstico Clínico
-**
- 
-|
- O modelo detecta padrões linguísticos, não realiza diagnóstico médico 
-|
- Qualquer indicativo deve ser avaliado por profissional qualificado 
-|
-
-|
- 
-**
-Intervenção Responsável
-**
- 
-|
- Detecção de risco requer protocolo de resposta adequado 
-|
- Parceria com profissionais de saúde mental 
-|
-
-
-####
- Privacidade e Direitos
-
-|
- Aspecto 
-|
- Implicação 
-|
- Recomendação 
-|
-
-|
----------
-|
------------
-|
---------------
-|
-
-|
- 
-**
-Privacidade e Consentimento
-**
- 
-|
- Monitoramento de redes sociais levanta questões sobre vigilância 
-|
- Conformidade com LGPD/GDPR é essencial 
-|
-
-|
- 
-**
-Estigma e Discriminação
-**
- 
-|
- Uso inadequado pode levar a discriminação 
-|
- Transparência sobre o uso e limitações do modelo 
-|
-
+| Aspecto | Implicação | Recomendação |
+|---------|-----------|--------------|
+| **Privacidade e Consentimento** | Monitoramento de redes sociais levanta questões sobre vigilância | Conformidade com LGPD/GDPR é essencial |
+| **Estigma e Discriminação** | Uso inadequado pode levar a discriminação | Transparência sobre o uso e limitações do modelo |
 
 ---
 
-###
- ⚖️ Declaração de Uso Responsável
+### ⚖️ Declaração de Uso Responsável
 
->
- 
-**
-Este modelo deve ser utilizado APENAS como ferramenta auxiliar de triagem em saúde mental. NÃO substitui avaliação clínica profissional. Qualquer indicativo detectado pelo sistema DEVE ser encaminhado para profissional qualificado de saúde mental.
-**
+> **Este modelo deve ser utilizado APENAS como ferramenta auxiliar de triagem em saúde mental. NÃO substitui avaliação clínica profissional. Qualquer indicativo detectado pelo sistema DEVE ser encaminhado para profissional qualificado de saúde mental.**
 
 ---
 
-##
- 🔮 Trabalhos Futuros
+## 🔮 Trabalhos Futuros
 
-###
- 📌 Roadmap de Desenvolvimento
+### 📌 Roadmap de Desenvolvimento
 
-####
- Curto Prazo (3-6 meses)
+#### Curto Prazo (3-6 meses)
 
--
- [ ] Adaptação do modelo para 
-**
-português brasileiro
-**
+- [ ] Adaptação do modelo para **português brasileiro**
+- [ ] Expansão do dataset com mais exemplos
+- [ ] Implementação de **API REST** para uso em produção
+- [ ] Dashboard interativo para visualização de resultados
 
--
- [ ] Expansão do dataset com mais exemplos
--
- [ ] Implementação de 
-**
-API REST
-**
- para uso em produção
--
- [ ] Dashboard interativo para visualização de resultados
-####
- Médio Prazo (6-12 meses)
+#### Médio Prazo (6-12 meses)
 
--
- [ ] 
-**
-Análise multimodal
-**
- (texto + imagem + metadados)
--
- [ ] Detecção de 
-**
-outros transtornos mentais
-**
- (ansiedade, bipolaridade)
--
- [ ] 
-**
-Transfer learning
-**
- com modelos pré-treinados (BERT, GPT)
--
- [ ] Monitoramento temporal (evolução do estado emocional)
-####
- Longo Prazo (12+ meses)
+- [ ] **Análise multimodal** (texto + imagem + metadados)
+- [ ] Detecção de **outros transtornos mentais** (ansiedade, bipolaridade)
+- [ ] **Transfer learning** com modelos pré-treinados (BERT, GPT)
+- [ ] Monitoramento temporal (evolução do estado emocional)
 
--
- [ ] Integração com 
-**
-sistemas de saúde pública
-**
+#### Longo Prazo (12+ meses)
 
--
- [ ] Estudos longitudinais de 
-**
-eficácia de intervenção
-**
-
--
- [ ] Desenvolvimento de 
-**
-chatbot de suporte emocional
-**
-
--
- [ ] Pesquisa sobre 
-**
-padrões epidemiológicos
-**
- em tempo real
----
-
-##
- 🛠️ Tecnologias Utilizadas
-
-###
- 🐍 Core ML & Data Science
-
-!
-[
-Python
-](
-https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
-)
-
-!
-[
-Scikit-learn
-](
-https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white
-)
-
-!
-[
-Pandas
-](
-https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white
-)
-
-!
-[
-NumPy
-](
-https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white
-)
-
-###
- 📝 NLP & Text Processing
-
-!
-[
-NLTK
-](
-https://img.shields.io/badge/NLTK-Natural%20Language%20Toolkit-green?style=for-the-badge
-)
-
-!
-[
-Regex
-](
-https://img.shields.io/badge/Regex-Pattern%20Matching-blue?style=for-the-badge
-)
-
-###
- 📊 Visualização de Dados
-
-!
-[
-Matplotlib
-](
-https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge
-)
-
-!
-[
-Seaborn
-](
-https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge
-)
-
-!
-[
-WordCloud
-](
-https://img.shields.io/badge/WordCloud-Visualization-orange?style=for-the-badge
-)
-
-###
- 💻 Ambiente de Desenvolvimento
-
-!
-[
-Jupyter
-](
-https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white
-)
-
-!
-[
-Google Colab
-](
-https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white
-)
+- [ ] Integração com **sistemas de saúde pública**
+- [ ] Estudos longitudinais de **eficácia de intervenção**
+- [ ] Desenvolvimento de **chatbot de suporte emocional**
+- [ ] Pesquisa sobre **padrões epidemiológicos** em tempo real
 
 ---
 
-##
- 📚 Referências Bibliográficas
+## 🛠️ Tecnologias Utilizadas
 
-###
- Saúde Mental e Epidemiologia
+### 🐍 Core ML & Data Science
 
-1.
- 
-**
-World Health Organization (WHO)
-**
-. Depression and Other Common Mental Disorders: Global Health Estimates. Geneva: WHO, 2017.
-###
- Machine Learning em Saúde Mental
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
-2.
- 
-**
-De Choudhury, M., et al.
-**
- "Predicting Depression via Social Media." Proceedings of the International AAAI Conference on Web and Social Media, 2013.
-3.
- 
-**
-Guntuku, S. C., et al.
-**
- "Detecting depression and mental illness on social media: an integrative review." Current Opinion in Behavioral Sciences, 2017.
-###
- Fundamentos de Machine Learning
+### 📝 NLP & Text Processing
 
-4.
- 
-**
-Cortes, C.; Vapnik, V.
-**
- "Support-Vector Networks." Machine Learning, v. 20, n. 3, p. 273-297, 1995.
-5.
- 
-**
-Pedregosa, F., et al.
-**
- "Scikit-learn: Machine Learning in Python." Journal of Machine Learning Research, 2011.
----
+![NLTK](https://img.shields.io/badge/NLTK-Natural%20Language%20Toolkit-green?style=for-the-badge)
+![Regex](https://img.shields.io/badge/Regex-Pattern%20Matching-blue?style=for-the-badge)
 
-##
- 🔗 Links e Recursos
+### 📊 Visualização de Dados
 
-###
- 📁 Documentação do Projeto
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge)
+![WordCloud](https://img.shields.io/badge/WordCloud-Visualization-orange?style=for-the-badge)
 
-####
- Código e Notebooks
+### 💻 Ambiente de Desenvolvimento
 
--
- 📊 
-[
-Notebook Jupyter (Abrir no Colab)
-](
-https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Detec%C3%A7%C3%A3o%20de%20Depress%C3%A3o%20nos%20Tweets.ipynb
-)
-
--
- 📊 
-[
-Dataset (CSV)
-](
-https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Projeto%20Final/Database/sentiment_tweets3.csv
-)
-
-####
- Documentação
-
--
- 📄 
-[
-Artigo Completo (DOCX)
-](
-https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.docx
-)
-
--
- 📈 
-[
-Apresentação (PDF)
-](
-https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Deteccao-de-Depressao-em-Redes-Sociais_vfinal.pdf
-)
-
-####
- Visualizações
-
--
- 🔄 
-[
-Fluxograma Mermaid
-](
-https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Fluxo/FluxoDeteccaoDepressao.mermaid
-)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
 
 ---
 
+## 📚 Referências Bibliográficas
 
+### Saúde Mental e Epidemiologia
 
+1. **World Health Organization (WHO)**. Depression and Other Common Mental Disorders: Global Health Estimates. Geneva: WHO, 2017.
+
+### Machine Learning em Saúde Mental
+
+2. **De Choudhury, M., et al.** "Predicting Depression via Social Media." Proceedings of the International AAAI Conference on Web and Social Media, 2013.
+
+3. **Guntuku, S. C., et al.** "Detecting depression and mental illness on social media: an integrative review." Current Opinion in Behavioral Sciences, 2017.
+
+### Fundamentos de Machine Learning
+
+4. **Cortes, C.; Vapnik, V.** "Support-Vector Networks." Machine Learning, v. 20, n. 3, p. 273-297, 1995.
+
+5. **Pedregosa, F., et al.** "Scikit-learn: Machine Learning in Python." Journal of Machine Learning Research, 2011.
+
+---
+
+## 🔗 Links e Recursos
+
+### 📁 Documentação do Projeto
+
+#### Código e Notebooks
+
+- 📊 [Notebook Jupyter (Abrir no Colab)](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Detec%C3%A7%C3%A3o%20de%20Depress%C3%A3o%20nos%20Tweets.ipynb)
+- 📊 [Dataset (CSV)](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Projeto%20Final/Database/sentiment_tweets3.csv)
+
+#### Documentação
+
+- 📄 [Artigo Completo (DOCX)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.docx)
+- 📈 [Apresentação (PDF)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Deteccao-de-Depressao-em-Redes-Sociais_vfinal.pdf)
+
+#### Visualizações
+
+- 🔄 [Fluxograma Mermaid](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Fluxo/FluxoDeteccaoDepressao.mermaid)
+
+---
+
+<div align="center">
+
+### ⭐ Se este projeto foi útil para você, considere dar uma estrela!
+
+**Feito com ❤️ e Python**
+
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=laerciosantos09.senac-ml-depression)
+![GitHub stars](https://img.shields.io/github/stars/laerciosantos09/Senac-MachineLearning?style=social)
+![GitHub forks](https://img.shields.io/github/forks/laerciosantos09/Senac-MachineLearning?style=social)
+
+</div>
