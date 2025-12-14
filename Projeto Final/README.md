@@ -274,7 +274,6 @@ matplotlib>=3.4.2
 seaborn>=0.11.1
 wordcloud>=1.8.1
 
-
 ---
 
 ## ⚠️ Limitações e Considerações Éticas
@@ -349,7 +348,6 @@ wordcloud>=1.8.1
 - 📊 [Dataset (CSV)](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Projeto%20Final/Database/sentiment_tweets3.csv)
 
 </div>
-
 
 ---
 
