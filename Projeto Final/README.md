@@ -28,7 +28,6 @@ Autores:
 - [Como Usar](#-como-usar)
 - [Limitações e Considerações Éticas](#-limitações-e-considerações-éticas)
 
----
 
 ## 🎯 Visão Geral
 
@@ -310,7 +309,7 @@ nltk>=3.6.2
 matplotlib>=3.4.2
 seaborn>=0.11.1
 wordcloud>=1.8.1
-```
+
 
 ---
 
