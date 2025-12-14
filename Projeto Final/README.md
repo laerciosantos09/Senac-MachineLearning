@@ -3,9 +3,6 @@
 <div align="center">
 
 ![Header](https://img.shields.io/badge/Machine%20Learning-Depression%20Detection-blue?style=for-the-badge)
-#![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python)
-#![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?style=for-the-badge&logo=scikit-learn)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 **Centro Universitário SENAC | Machine Learning Técnicas e Cases**
 
