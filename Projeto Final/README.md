@@ -6,7 +6,7 @@
 
 **Centro Universitário SENAC | Machine Learning Técnicas e Cases**
 
-*Autores: *
+Autores: 
 
 *Laércio Santos e Anderson Silva*
 
