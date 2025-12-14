@@ -262,7 +262,6 @@ pip install -r requirements.txt
 # Abra o Jupyter Notebook
 jupyter notebook "Detecção de Depressão nos Tweets.ipynb"
 
-```
 
 ### Dependências Principais
 
@@ -274,9 +273,6 @@ nltk>=3.6.2
 matplotlib>=3.4.2
 seaborn>=0.11.1
 wordcloud>=1.8.1
-
-
-</div>
 
 ---
 
@@ -375,3 +371,7 @@ wordcloud>=1.8.1
 ### Ambiente de Desenvolvimento
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
+
+
+
+</div>
