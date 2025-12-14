@@ -6,6 +6,8 @@
 
 **Centro Universitário SENAC | Machine Learning Técnicas e Cases**
 
+*Autores: *
+
 *Laércio Santos e Anderson Silva*
 
 [📊 Notebook Interativo](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Detec%C3%A7%C3%A3o%20de%20Depress%C3%A3o%20nos%20Tweets.ipynb) | [📄 Artigo Completo](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.docx) | [📈 Apresentação](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Deteccao-de-Depressao-em-Redes-Sociais%20vfinal.pdf)
