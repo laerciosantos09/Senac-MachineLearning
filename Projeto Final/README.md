@@ -16,19 +16,6 @@ Autores:
 
 ---
 
-## 📋 Sumário
-
-- [Visão Geral](#-visão-geral)
-- [Motivação](#-motivação)
-- [Metodologia](#-metodologia)
-- [Fluxo do Sistema](#-fluxo-do-sistema)
-- [Resultados](#-resultados)
-- [Dataset](#-dataset)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Como Usar](#-como-usar)
-- [Limitações e Considerações Éticas](#-limitações-e-considerações-éticas)
-
-
 ## 🎯 Visão Geral
 
 Este projeto desenvolve um **modelo de Machine Learning capaz de identificar indicativos de depressão em textos publicados no Twitter**, utilizando técnicas de Processamento de Linguagem Natural (NLP) e algoritmos de classificação supervisionada.
