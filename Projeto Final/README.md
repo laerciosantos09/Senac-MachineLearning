@@ -197,7 +197,7 @@ flowchart TB
 
 <div align="center">
 
-![Comparação de Modelos](https://via.placeholder.com/800x400/1e1b4b/ffffff?text=Gr%C3%A1fico+de+Compara%C3%A7%C3%A3o+dos+Modelos)
+![Comparação de Modelos](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/ComparaModelos.jpg)
 
 </div>
 
