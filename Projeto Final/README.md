@@ -239,29 +239,6 @@ Palavras predominantes: `love`, `good`, `day`, `thank`, `haha`, `time`, `great`,
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-
-### Core ML & Data Science
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-
-### NLP & Text Processing
-![NLTK](https://img.shields.io/badge/NLTK-Natural%20Language%20Toolkit-green?style=for-the-badge)
-![Regex](https://img.shields.io/badge/Regex-Pattern%20Matching-blue?style=for-the-badge)
-
-### Visualização
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge)
-![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge)
-![WordCloud](https://img.shields.io/badge/WordCloud-Visualization-orange?style=for-the-badge)
-
-### Ambiente de Desenvolvimento
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
-
----
-
 ## 🚀 Como Usar
 
 ### Opção 1: Google Colab (Recomendado)
@@ -370,5 +347,28 @@ wordcloud>=1.8.1
 - 📈 [Apresentação (PDF)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Deteccao-de-Depressao-em-Redes-Sociais_vfinal.pdf)
 - 🔄 [Fluxograma Mermaid](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Fluxo/FluxoDeteccaoDepressao.mermaid)
 - 📊 [Dataset (CSV)](https://raw.githubusercontent.com/laerciosantos09/Senac-MachineLearning/main/Projeto%20Final/Database/sentiment_tweets3.csv)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+### Core ML & Data Science
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+
+### NLP & Text Processing
+![NLTK](https://img.shields.io/badge/NLTK-Natural%20Language%20Toolkit-green?style=for-the-badge)
+![Regex](https://img.shields.io/badge/Regex-Pattern%20Matching-blue?style=for-the-badge)
+
+### Visualização
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge)
+![WordCloud](https://img.shields.io/badge/WordCloud-Visualization-orange?style=for-the-badge)
+
+### Ambiente de Desenvolvimento
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
 
 </div>
