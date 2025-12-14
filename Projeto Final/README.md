@@ -3,8 +3,6 @@
 <div align="center">
 
 ![Header](https://img.shields.io/badge/Machine%20Learning-Depression%20Detection-blue?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?style=for-the-badge&logo=scikit-learn)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 **Centro Universitário SENAC | Machine Learning Técnicas - Projeto Final**
@@ -458,13 +456,5 @@ wordcloud>=1.8.1
 ---
 
 <div align="center">
-
-### ⭐ Se este projeto foi útil para você, considere dar uma estrela!
-
-**Feito com ❤️ e Python**
-
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=laerciosantos09.senac-ml-depression)
-![GitHub stars](https://img.shields.io/github/stars/laerciosantos09/Senac-MachineLearning?style=social)
-![GitHub forks](https://img.shields.io/github/forks/laerciosantos09/Senac-MachineLearning?style=social)
 
 </div>
