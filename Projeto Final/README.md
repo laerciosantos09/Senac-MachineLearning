@@ -9,7 +9,7 @@
 
 **Autores:** *Laércio Santos e Anderson Silva*
 
-[📊 Notebook Interativo](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Detec%C3%A7%C3%A3o%20de%20Depress%C3%A3o%20nos%20Tweets.ipynb) | [📄 Artigo Completo](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.docx) | [📈 Apresentação](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Deteccao-de-Depressao-em-Redes-Sociais_vfinal.pdf)
+[📊 Notebook Interativo](https://colab.research.google.com/github/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Detec%C3%A7%C3%A3o%20de%20Depress%C3%A3o%20nos%20Tweets.ipynb) | [📄 Artigo Completo DOCX](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.docx) | [📄 Artigo Completo PDF](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.pdf) | [📈 Apresentação](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Deteccao-de-Depressao-em-Redes-Sociais_vfinal.pdf)
 
 </div>
 
@@ -447,6 +447,7 @@ wordcloud>=1.8.1
 #### Documentação
 
 - 📄 [Artigo Completo (DOCX)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.docx)
+- 📄 [Artigo Completo PDF](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Artigo_Deteccao_Depressao.pdf)
 - 📈 [Apresentação (PDF)](https://github.com/laerciosantos09/Senac-MachineLearning/blob/main/Projeto%20Final/Deteccao-de-Depressao-em-Redes-Sociais_vfinal.pdf)
 
 #### Visualizações
